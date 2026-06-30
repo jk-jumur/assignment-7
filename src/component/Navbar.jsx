@@ -1,9 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
+
 import LogoImg from "../../src/assets/images/logo.png";
 
 import { ChartLine } from "lucide-react";
 import { RiHome2Line, RiTimeLine } from "react-icons/ri";
+import Mylink from "./shared/Navbar/Mylink";
 
 const Navbar = () => {
   const navItems = [
@@ -32,6 +33,7 @@ const Navbar = () => {
           alt="logo"
           width={200}
           height={200}
+          className="w-auto h-auto"
         />
 
         <div className="flex gap-3">
@@ -39,14 +41,14 @@ const Navbar = () => {
             const Icon = item.icon;
 
             return (
-              <Link
+              <Mylink
                 key={index}
                 href={item.path}
-                className="btn text-[#64748B] font-semibold"
+                
               >
                 <Icon size={20} />
                 {item.text}
-              </Link>
+              </Mylink>
             );
           })}
         </div>
