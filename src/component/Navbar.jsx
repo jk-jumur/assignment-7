@@ -1,45 +1,58 @@
 import Image from "next/image";
-import LogoImg from '../../src/assets/images/logo.png'
+import Link from "next/link";
+import LogoImg from "../../src/assets/images/logo.png";
 
-import { ChartLine } from 'lucide-react';
+import { ChartLine } from "lucide-react";
 import { RiHome2Line, RiTimeLine } from "react-icons/ri";
 
-
 const Navbar = () => {
+  const navItems = [
+    {
+      path: "/",
+      text: "Home",
+      icon: RiHome2Line,
+    },
+    {
+      path: "/timeline",
+      text: "Timeline",
+      icon: RiTimeLine,
+    },
+    {
+      path: "/stats",
+      text: "Stats",
+      icon: ChartLine,
+    },
+  ];
 
-      const navItems = [
-         {
-             path:"/",
-             text:"Home",
-         },
+  return (
+    <nav className="bg-white shadow">
+      <div className="container mx-auto flex justify-between items-center py-[5px]">
+        <Image
+          src={LogoImg}
+          alt="logo"
+          width={200}
+          height={200}
+        />
 
-         {
-            path: "/timeline",
-            text: "Timeline",
-         },
+        <div className="flex gap-3">
+          {navItems.map((item, index) => {
+            const Icon = item.icon;
 
-         {
-             path:"/stats",
-             text:"Stats"
-         }
-
-      ]
-    return (
-        <nav className="container mx-auto p-4">
-            <div className="flex justify-between">
-                 <Image src={LogoImg}
-                  alt="lgo-xl"
-                  width={200}
-                  height={200}
-                  className=" text-4xl"/>
-                   <div className="flex gap-3">
-                       <button className="btn text-[#64748B] font-semibold "><RiHome2Line />Home</button>
-                       <button className="btn text-[#64748B] font-semibold "><RiTimeLine />Timeline</button>
-                       <button className="btn text-[#64748B] font-semibold ">  <ChartLine />Stats</button>
-                   </div>
-             </div> 
-        </nav>
-    );
+            return (
+              <Link
+                key={index}
+                href={item.path}
+                className="btn text-[#64748B] font-semibold"
+              >
+                <Icon size={20} />
+                {item.text}
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;
