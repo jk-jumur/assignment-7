@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
     >
       <body 
       data-theme="light" 
-      className="min-h-full flex flex-col bg-[#64748B]">
+      className="min-h-full flex flex-col bg-gray-100">
           <Navbar/>
         {children}
           <Footer/>

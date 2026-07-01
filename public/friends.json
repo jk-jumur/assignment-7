@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "name": "David Kim",
+    "picture": "/images/friend1.png",
+    "email": "david.kim@example.com",
+    "days_since_contact": 62,
+    "status": "almost-due",
+    "tags": ["work"],
+    "bio": "Software engineer and coffee enthusiast.",
+    "goal": 30,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 2,
+    "name": "Emma Wilson",
+    "picture": "/images/friend2.png",
+    "email": "emma.wilson@example.com",
+    "days_since_contact": 62,
+    "status": "overdue",
+    "tags": ["family"],
+    "bio": "Cousin who loves traveling and baking.",
+    "goal": 30,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 3,
+    "name": "Lisa Nakamura",
+    "picture": "/images/friend3.png",
+    "email": "lisa.nakamura@example.com",
+    "days_since_contact": 62,
+    "status": "overdue",
+    "tags": ["work"],
+    "bio": "Project manager and photography lover.",
+    "goal": 30,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 4,
+    "name": "James Wright",
+    "picture": "/images/friend4.png",
+    "email": "james.wright@example.com",
+    "days_since_contact": 62,
+    "status": "overdue",
+    "tags": ["hobby", "travel"],
+    "bio": "Adventure partner who enjoys hiking.",
+    "goal": 30,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 5,
+    "name": "David Kim",
+    "picture": "/images/friend5.png",
+    "email": "david.kim2@example.com",
+    "days_since_contact": 62,
+    "status": "overdue",
+    "tags": ["work"],
+    "bio": "Frontend developer and movie fan.",
+    "goal": 30,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 6,
+    "name": "Emma Wilson",
+    "picture": "/images/friend6.png",
+    "email": "emma.wilson2@example.com",
+    "days_since_contact": 62,
+    "status": "on-track",
+    "tags": ["family"],
+    "bio": "Loves reading books and cooking.",
+    "goal": 30,
+    "next_due_date": "2025-07-30"
+  },
+  {
+    "id": 7,
+    "name": "Lisa Nakamura",
+    "picture": "/images/friend7.png",
+    "email": "lisa.nakamura2@example.com",
+    "days_since_contact": 62,
+    "status": "on-track",
+    "tags": ["work"],
+    "bio": "UX designer with a passion for art.",
+    "goal": 30,
+    "next_due_date": "2025-07-30"
+  },
+  {
+    "id": 8,
+    "name": "James Wright",
+    "picture": "/images/friend8.png",
+    "email": "james.wright2@example.com",
+    "days_since_contact": 62,
+    "status": "almost-due",
+    "tags": ["hobby", "travel"],
+    "bio": "Travel blogger and nature photographer.",
+    "goal": 30,
+    "next_due_date": "2025-07-25"
+  },
+  
+  {
+    "id": 9,
+    "name": "David Kim",
+    "picture": "/images/friend9.png",
+    "email": "david@example.com",
+    "days_since_contact": 62,
+    "status": "almost-due",
+    "tags": ["work"]
+  },
+  {
+    "id": 10,
+    "name": "Emma Wilson",
+    "picture": "/images/friend10.png",
+    "email": "emma@example.com",
+    "days_since_contact": 62,
+    "status": "overdue",
+    "tags": ["family"]
+  },
+  {
+    "id": 11,
+    "name": "Lisa Nakamura",
+    "picture": "/images/friend11.png",
+    "email": "lisa@example.com",
+    "days_since_contact": 62,
+    "status": "overdue",
+    "tags": ["work"]
+  },
+  {
+    "id": 12,
+    "name": "James Wright",
+    "picture": "/images/friend12.png",
+    "email": "james@example.com",
+    "days_since_contact": 62,
+    "status": "on-track",
+    "tags": ["hobby", "travel"]
+  }
+]

@@ -2,7 +2,8 @@ import { Plus } from "lucide-react";
 
 const Banner = () => {
   return (
-    <div className="container mx-auto px-6 py-16 mb-20">
+    <div className="container mx-auto px-6 py-16 mb-6">
+
       {/* Heading And Subtitle */}
 
       <div className="text-center space-y-5 max-w-3xl mx-auto">
@@ -50,7 +51,10 @@ const Banner = () => {
           </p>
         </div>
       </div>
+              <hr className="mt-10 text-gray-200"/>
     </div>
+
+    
   );
 };
 
