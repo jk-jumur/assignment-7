@@ -8,7 +8,11 @@ import Image from "next/image";
 import callIcon from "@/assets/images/call.png";
 import textIcon from "@/assets/images/text.png";
 import videoIcon from "@/assets/images/video.png";
-import meetupIcon from "@/assets/images/text.png"; // Replace with your meetup icon if available
+import meetupIcon from "@/assets/images/text.png"; 
+
+
+
+
 
 const TimelinePage = () => {
   const { timelineData } = useContext(CheckInContext);

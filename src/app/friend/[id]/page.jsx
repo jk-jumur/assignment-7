@@ -4,6 +4,23 @@ import Image from "next/image";
 import { PiArchiveBold } from "react-icons/pi";
 import { RiDeleteBinLine, RiNotificationSnoozeLine } from "react-icons/ri";
 
+export async function generateMetadata({params}){
+  const {id} = await params;
+  const friends = await friendsPromise();
+  const friend = friends.find((f) => f.id === Number(id));
+
+    if(!friend){
+        return{
+            title: `Not Found - keenkeeper`,
+        
+        }
+    }
+  return{
+     title: `${friend.name} - keenkeeper`,
+     description: friend.bio,
+  }
+}
+
 const friendsPromise = async () => {
   const res = await fetch("http://localhost:3000/friends.json");
   return res.json();
@@ -40,7 +57,7 @@ const FriendsDetailPage = async ({ params }) => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-start">
           
           {/* --- Left Column: Profile Card & Action Buttons --- */}
-          {/* Takes full width on mobile, 1 column on tablet/desktop */}
+         
           <div className="flex flex-col gap-4 w-full col-span-1">
             
             {/* Profile Card */}
@@ -110,11 +127,11 @@ const FriendsDetailPage = async ({ params }) => {
           </div>
 
           {/* --- Right Column: Content Section --- */}
-          {/* Takes 1 column on mobile, spans 2 columns on tablet/desktop */}
+          
           <div className="col-span-1 md:col-span-2 flex flex-col gap-6 w-full">
             
             {/* 3 Main Stats Boxes */}
-            {/* 1 column on mobile, automatically splits into 3 columns from small screens (sm) up */}
+        
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="bg-white rounded-2xl border border-gray-100 p-5 flex flex-col items-center justify-center min-h-[120px] shadow-sm">
                 <span className="block text-3xl font-bold text-[#244D3F] tracking-tight">{friend.days_since_contact || 62}</span>

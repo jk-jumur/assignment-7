@@ -9,7 +9,8 @@
     "tags": ["work"],
     "bio": "Software engineer and coffee enthusiast.",
     "goal": 30,
-    "next_due_date": "2025-07-20"
+    "next_due_date": "2025-07-20",
+    "interaction_type": "call"
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
     "tags": ["family"],
     "bio": "Cousin who loves traveling and baking.",
     "goal": 30,
-    "next_due_date": "2025-07-18"
+    "next_due_date": "2025-07-18",
+    "interaction_type": "text"
   },
   {
     "id": 3,
@@ -33,7 +35,8 @@
     "tags": ["work"],
     "bio": "Project manager and photography lover.",
     "goal": 30,
-    "next_due_date": "2025-07-18"
+    "next_due_date": "2025-07-18",
+    "interaction_type": "video"
   },
   {
     "id": 4,
@@ -45,7 +48,8 @@
     "tags": ["hobby", "travel"],
     "bio": "Adventure partner who enjoys hiking.",
     "goal": 30,
-    "next_due_date": "2025-07-18"
+    "next_due_date": "2025-07-18",
+    "interaction_type": "text"
   },
   {
     "id": 5,
@@ -57,7 +61,8 @@
     "tags": ["work"],
     "bio": "Frontend developer and movie fan.",
     "goal": 30,
-    "next_due_date": "2025-07-18"
+    "next_due_date": "2025-07-18",
+    "interaction_type": "call"
   },
   {
     "id": 6,
@@ -69,7 +74,8 @@
     "tags": ["family"],
     "bio": "Loves reading books and cooking.",
     "goal": 30,
-    "next_due_date": "2025-07-30"
+    "next_due_date": "2025-07-30",
+    "interaction_type": "video"
   },
   {
     "id": 7,
@@ -81,7 +87,8 @@
     "tags": ["work"],
     "bio": "UX designer with a passion for art.",
     "goal": 30,
-    "next_due_date": "2025-07-30"
+    "next_due_date": "2025-07-30",
+    "interaction_type": "text"
   },
   {
     "id": 8,
@@ -93,9 +100,9 @@
     "tags": ["hobby", "travel"],
     "bio": "Travel blogger and nature photographer.",
     "goal": 30,
-    "next_due_date": "2025-07-25"
+    "next_due_date": "2025-07-25",
+    "interaction_type": "call"
   },
-  
   {
     "id": 9,
     "name": "David Kim",
@@ -103,7 +110,8 @@
     "email": "david@example.com",
     "days_since_contact": 62,
     "status": "almost-due",
-    "tags": ["work"]
+    "tags": ["work"],
+    "interaction_type": "text"
   },
   {
     "id": 10,
@@ -112,7 +120,8 @@
     "email": "emma@example.com",
     "days_since_contact": 62,
     "status": "overdue",
-    "tags": ["family"]
+    "tags": ["family"],
+    "interaction_type": "video"
   },
   {
     "id": 11,
@@ -121,7 +130,8 @@
     "email": "lisa@example.com",
     "days_since_contact": 62,
     "status": "overdue",
-    "tags": ["work"]
+    "tags": ["work"],
+    "interaction_type": "call"
   },
   {
     "id": 12,
@@ -130,6 +140,7 @@
     "email": "james@example.com",
     "days_since_contact": 62,
     "status": "on-track",
-    "tags": ["hobby", "travel"]
+    "tags": ["hobby", "travel"],
+    "interaction_type": "text"
   }
 ]
