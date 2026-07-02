@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const FriendCard = ({ friend }) => {
   const statusConfig = {
@@ -24,7 +25,7 @@ const FriendCard = ({ friend }) => {
   };
 
   return (
-    <div className="w-full max-w-[270px] bg-white rounded-xl shadow-sm border border-gray-100 h-64 p-6 flex flex-col items-center">
+    <Link href={`/friend/${friend.id}`} className="w-full max-w-[270px] bg-white rounded-xl shadow-sm border border-gray-100 h-64 p-6 flex flex-col items-center">
 
       <Image
         src={friend.picture}
@@ -68,7 +69,7 @@ const FriendCard = ({ friend }) => {
   </span>
 </div>
 
-    </div>
+    </Link>
   );
 };
 

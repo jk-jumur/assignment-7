@@ -1,7 +1,9 @@
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/component/Navbar";
 import Footer from "@/component/Footer";
+import Providers from "./lib/providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,9 +30,17 @@ export default function RootLayout({ children }) {
       <body 
       data-theme="light" 
       className="min-h-full flex flex-col bg-gray-100">
-          <Navbar/>
-        {children}
-          <Footer/>
+          
+               
+                 <Providers>
+                  <Navbar/>
+                  {children}
+                   <Footer/>
+                  </Providers>
+                 
+              
+          
+        
         </body>
     </html>
   );

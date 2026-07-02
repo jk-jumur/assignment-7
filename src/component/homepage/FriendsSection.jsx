@@ -10,6 +10,7 @@ const FriendsSection = async () => {
 
   return (
    <div className="container mx-auto px-4 py-6">
+     
       <h2 className="text-2xl font-semibold text-[#1F2937] mb-6">
         Your Friends
       </h2>
