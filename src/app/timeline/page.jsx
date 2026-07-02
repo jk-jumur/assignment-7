@@ -18,7 +18,7 @@ const TimelinePage = () => {
   const { timelineData } = useContext(CheckInContext);
   const [filterType, setFilterType] = useState("All");
 
-  // Helper object to dynamically set images and titles
+  //  object to dynamically set images and titles
   const activityDetails = {
     Call: {
       imgSrc: callIcon,

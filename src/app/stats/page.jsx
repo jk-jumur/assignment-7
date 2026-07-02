@@ -29,7 +29,7 @@ const StatsPage = () => {
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-[50vh]">
-        <span className="loading loading-bars loading-lg bg-purple-900"></span>
+        <span className="loading loading-bars loading-lg bg-green-600"></span>
       </div>
     );
   }

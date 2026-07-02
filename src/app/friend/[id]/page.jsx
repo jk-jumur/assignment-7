@@ -1,5 +1,6 @@
 import CheckInToggolButton from "@/component/qucikCheckIn/CheckInToggolButton";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 
 import { PiArchiveBold } from "react-icons/pi";
 import { RiDeleteBinLine, RiNotificationSnoozeLine } from "react-icons/ri";
@@ -33,7 +34,7 @@ const FriendsDetailPage = async ({ params }) => {
   const friend = friends.find((f) => f.id === Number(id));
 
   if (!friend) {
-    return <div className="text-center py-10 font-semibold text-gray-500">Friend not found!</div>;
+   notFound();
   }
 
   const statusConfig = {
@@ -54,6 +55,7 @@ const FriendsDetailPage = async ({ params }) => {
       <div className="container mx-auto">
         
         {/* Main Grid Layout: 1 column on mobile, 3 columns on tablet and desktop */}
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-start">
           
           {/* --- Left Column: Profile Card & Action Buttons --- */}
